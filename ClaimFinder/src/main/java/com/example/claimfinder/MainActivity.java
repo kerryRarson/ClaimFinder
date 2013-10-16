@@ -2,6 +2,8 @@ package com.example.claimfinder;
 
 /**
  * Created by klarsen on 9/22/13.
+ * 
+ * PLEASE REFACTOR THIS TO extend ActivityList
  */
 import java.lang.reflect.Array;
 import java.util.ArrayList;
