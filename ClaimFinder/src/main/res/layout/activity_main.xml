@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lblCurrentLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Getting Location..."/>
+    <TextView
+        android:id="@+id/currentLat"
+        android:visibility="invisible"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"/>
+    <TextView
+        android:id="@+id/currentLon"
+        android:visibility="invisible"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#dcdcdc"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Within"
+            android:padding="5dp"/>
+
+        <Spinner
+            android:padding="5dp"
+            android:id="@+id/spinner1"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/miles_array"
+            android:prompt="@string/miles_from_me_prompt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="miles"
+            android:padding="5dp" />
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:enabled="false"
+            android:onClick="btnSearchClick" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/android:list"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/topRow"/>
+
+
+</LinearLayout>
